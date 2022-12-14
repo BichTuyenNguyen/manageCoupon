@@ -1,20 +1,19 @@
-package models;
+package Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import java.util.Date;
 
-@Entity
-@Table(name= "Coupon")
+
 public class Coupon {
   int id;
   Date createDate;
   Date endDate;
 
-  Coupon(int id, Date createDate, Date endDate) {
-    this.id = id;
+  public Coupon(int id, Date createDate, Date endDate) {
     this.createDate = createDate;
     this.endDate = endDate;
+  }
+
+  public Coupon() {
   }
 
   int getId() {

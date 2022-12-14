@@ -1,10 +1,13 @@
-package models;
+package Entities;
 
 import java.util.Date;
 
-public class CouponA extends Coupon{
-  //id:  A01, A02
+
+public class CouponA extends Coupon {
+
   Double discount;
+
+  public CouponA() {}
 
   CouponA(int id, Date createDate, Date endDate, Double discount) {
     super(id, createDate, endDate);
@@ -18,8 +21,4 @@ public class CouponA extends Coupon{
   void setDiscount(Double discount) {
     this.discount = discount;
   }
-
-
-
-
 }
